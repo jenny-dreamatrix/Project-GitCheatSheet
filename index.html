@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>GitHub</h1>
+      <h2>Git Cheat Sheet</h2>
+      <p>
+        Git is the free and open source distributed version control system
+        that's responsible for everything GitHub related that happens locally on
+        your computer. This cheat sheet features the most important and commonly
+        used Git commands for easy reference.
+      </p>
+    </header>
+    <main>
+      <section class="grid-sec">
+        <article class="installation-art">
+          <h3>INSTALLATION & GUIS</h3>
+          <p>
+            With platform specific installers for Git, GitHub also provides the
+            ease of staying up-to-date with the latest releases of the command
+            line tool while providing a graphical user interface for day-to-day
+            interaction, review, and repository synchronization.
+          </p>
+          <div>
+            <h4>GitHub for Windows</h4>
+            <p>htps://windows.github.com</p>
+            <h4>GitHub for Mac</h4>
+            <p>htps://mac.github.com</p>
+            <p>
+              For Linux and Solaris platforms, the latest release is available
+              on the official Git web site.
+            </p>
+            <h4>Git for All Platforms</h4>
+            <p>htp://git-scm.com</p>
+          </div>
+        </article>
+
+        <article>
+          <h3>SETUP</h3>
+          <p>Configuring user information used across all local repositories</p>
+          <div>
+            <h5>git config --global user.name “[firstname lastname]”</h5>
+            <p>
+              set a name that is identifiable for credit when review version
+              history
+            </p>
+            <h5>git config --global user.email “[valid-email]”</h5>
+            <p>
+              set an email address that will be associated with each history
+              marker
+            </p>
+            <h5>git config --global color.ui auto</h5>
+            <p>
+              set automatic command line coloring for Git for easy reviewing
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <h3>SETUP & INIT</h3>
+          <p>
+            Configuring user information, initializing and cloning repositories
+          </p>
+          <div>
+            <h5>git init</h5>
+            <p>initialize an existing directory as a Git repository</p>
+            <h5>git clone [url]</h5>
+            <p>retrieve an entire repository from a hosted location via URL</p>
+          </div>
+        </article>
+
+        <article>
+          <h3>STAGE & SNAPSHOT</h3>
+          <p>Working with snapshots and the Git staging area</p>
+          <div>
+            <h5>git status</h5>
+            <p>
+              show modified files in working directory, staged for your next
+              commit
+            </p>
+            <h5>git add [file]</h5>
+            <p>add a file as it looks now to your next commit (stage)</p>
+            <h5>git reset [file]</h5>
+            <p>
+              unstage a file while retaining the changes in working directory
+            </p>
+            <h5>git diff</h5>
+            <p>diff of what is changed but not staged</p>
+            <h5>git diff --staged</h5>
+            <p>diff of what is staged but not yet commited</p>
+            <h5>git commit -m “[descriptive message]”</h5>
+            <p>commit your staged content as a new commit snapshot</p>
+          </div>
+        </article>
+
+        <article>
+          <h3>BRANCH & MERGE</h3>
+          <p>
+            Isolating work in branches, changing context, and integrating
+            changes
+          </p>
+          <div>
+            <h5>git branch</h5>
+            <p>
+              list your branches. a * will appear next to the currently active
+              branch
+            </p>
+            <h5>git branch [branch-name]</h5>
+            <p>create a new branch at the current commit</p>
+            <h5>git checkout</h5>
+            <p>
+              switch to another branch and check it out into your working
+              directory
+            </p>
+            <h5>git merge [branch]</h5>
+            <p>merge the specified branch’s history into the current one</p>
+            <h5>git log</h5>
+            <p>show all commits in the current branch’s history</p>
+          </div>
+        </article>
+
+        <article>
+          <h3>INSPECT & COMPARE</h3>
+          <p>Examining logs, diffs and object information</p>
+          <div>
+            <h5>git log</h5>
+            <p>show the commit history for the currently active branch</p>
+            <h5>git log branchB..branchA</h5>
+            <p>show the commits on branchA that are not on branchB</p>
+            <h5>git log --follow [file]</h5>
+            <p>show the commits that changed file, even across renames</p>
+            <h5>git diff branchB...branchA</h5>
+            <p>show the diff of what is in branchA that is not in branchB</p>
+            <h5>git show [SHA]</h5>
+            <p>show any object in Git in human-readable format</p>
+          </div>
+        </article>
+
+        <article>
+          <h3>SHARE & UPDATE</h3>
+          <p>
+            Retrieving updates from another repository and updating local repos
+          </p>
+          <div>
+            <h5>git remote add [alias] [url]</h5>
+            <p>add a git URL as an alias</p>
+            <h5>git fetch [alias]</h5>
+            <p>fetch down all the branches from that Git remote</p>
+            <h5>git merge [alias]/[branch]</h5>
+            <p>
+              merge a remote branch into your current branch to bring it up to
+              date
+            </p>
+            <h5>git push [alias] [branch]</h5>
+            <p>Transmit local branch commits to the remote repository branch</p>
+            <h5>git pull</h5>
+            <p>fetch and merge any commits from the tracking remote branch</p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
